@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MoreView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_avatar_bk.png" translatesAutoresizingMaskIntoConstraints="NO" id="KwB-Tg-ehY">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="KwB-Tg-ehY" secondAttribute="height" multiplier="200:107" id="fnz-3R-QGs"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fnz-3R-QGs"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="fnz-3R-QGs"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hen-GK-9PR">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="ZcT-z7-TEq"/>
+                        <constraint firstAttribute="height" constant="64" id="pUZ-v7-HCH"/>
+                    </constraints>
+                    <state key="normal" image="image_default_avatar.jpg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ZcT-z7-TEq"/>
+                            <exclude reference="pUZ-v7-HCH"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="ZcT-z7-TEq"/>
+                            <include reference="pUZ-v7-HCH"/>
+                        </mask>
+                    </variation>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pI-57-VND">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="9Ck-Fr-q5D"/>
+                        <constraint firstAttribute="height" constant="21" id="aMQ-kX-K6e"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="9Ck-Fr-q5D"/>
+                            <exclude reference="aMQ-kX-K6e"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="9Ck-Fr-q5D"/>
+                            <include reference="aMQ-kX-K6e"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1pI-57-VND" firstAttribute="top" secondItem="hen-GK-9PR" secondAttribute="bottom" id="Ash-Qb-hmB"/>
+                <constraint firstItem="KwB-Tg-ehY" firstAttribute="centerY" secondItem="hen-GK-9PR" secondAttribute="centerY" id="KNo-Jm-DWW"/>
+                <constraint firstAttribute="trailing" secondItem="KwB-Tg-ehY" secondAttribute="trailing" id="MZ7-tY-BWw"/>
+                <constraint firstItem="KwB-Tg-ehY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O27-q9-vWb"/>
+                <constraint firstItem="KwB-Tg-ehY" firstAttribute="centerX" secondItem="hen-GK-9PR" secondAttribute="centerX" id="Z1z-QH-b69"/>
+                <constraint firstItem="KwB-Tg-ehY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cRA-FC-hvK"/>
+                <constraint firstItem="KwB-Tg-ehY" firstAttribute="centerX" secondItem="1pI-57-VND" secondAttribute="centerX" id="u08-b2-h6f"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="KwB-Tg-ehY"/>
+                    <exclude reference="hen-GK-9PR"/>
+                    <exclude reference="1pI-57-VND"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Ash-Qb-hmB"/>
+                    <exclude reference="KNo-Jm-DWW"/>
+                    <exclude reference="MZ7-tY-BWw"/>
+                    <exclude reference="O27-q9-vWb"/>
+                    <exclude reference="Z1z-QH-b69"/>
+                    <exclude reference="cRA-FC-hvK"/>
+                    <exclude reference="u08-b2-h6f"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="KwB-Tg-ehY"/>
+                    <include reference="hen-GK-9PR"/>
+                    <include reference="1pI-57-VND"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Ash-Qb-hmB"/>
+                    <include reference="KNo-Jm-DWW"/>
+                    <include reference="MZ7-tY-BWw"/>
+                    <include reference="O27-q9-vWb"/>
+                    <include reference="Z1z-QH-b69"/>
+                    <include reference="cRA-FC-hvK"/>
+                    <include reference="u08-b2-h6f"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="bkImg" destination="KwB-Tg-ehY" id="K9M-Rf-q5f"/>
+                <outlet property="iconImg" destination="hen-GK-9PR" id="KlZ-PE-k9L"/>
+                <outlet property="loadLabel" destination="1pI-57-VND" id="4TZ-WJ-TIe"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_avatar_bk.png" width="1080" height="579"/>
+        <image name="image_default_avatar.jpg" width="256" height="256"/>
+    </resources>
+</document>
